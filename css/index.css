@@ -147,9 +147,156 @@ nav ul li .iconfont{
     text-align: center;
     font-weight:200 ;
 }
-
-
 /*列表3结束*/
+/*底部开始*/
+.section_3{
+    margin-top: 12px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+.section_3 a:hover{
+    text-decoration: underline;
+}
+.border{
+    margin: 0 auto;
+}
+.top_MAX{
+    margin: 0 auto;
+}
+.top_MAX ul li{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.top_MAX ul li a{
+    display: block;
+    width: 100%;
+    color: #333333;
+    font-weight: 400;
+}
+.top_MAX ul li a:hover{
+    text-decoration: underline #333333;
+}
+
+.footer{
+    width: 980px;
+    height: 55px;
+    padding-top:34px;
+    padding-bottom: 21px;
+    margin: 0 auto ;
+}
+.one_line{
+    font-size:11px;
+    font-weight: 400;
+    color:rgb(136,136,136);
+    border-bottom:1px solid #333333;
+    padding-bottom: 8px;
+    margin-bottom: 7px;
+}
+.one_line a{
+    color:rgb(0, 112, 201);
+}
+.two_line,.three_line {
+    font-size: 11px;
+    font-weight: 100;
+    height: 24px;
+}
+.two_line{
+    margin-top: 5px;
+    color:rgb(136,136,136);
+}
+.two_line .CN{
+    font-size: 12px;
+    float: right;
+}
+.CN .icon-guoji{
+    vertical-align: -2px;
+    color: red;
+}
+
+.footer .two_line2 a{
+    float: left;
+    font-size: 11px;
+    font-weight: 200;
+    margin:5px 7px 0 0;
+    padding-right: 10px;
+    color:#000;
+    border-right: 1px solid rgb(136,136,136);
+
+}
+.two_line2 a:last-child{
+    border-right: none;
+}
+.two_line1{
+    width: 225px;
+    height: 15px;
+    margin:5px 30px 0 0 ;
+    float: left;
+}
+/*缩放到一屏之后*/
+.top_MIN{
+    width: 100%;
+    height: 395px;
+}
+.top_MIN h3{
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 200;
+    border-bottom:1px solid #5555;
+    cursor: pointer;
+}
+
+.footer_small{
+    width:100%;
+    height:105px;
+    padding: 17px 0 19px;
+}
+.footer_small .small_two{
+    margin-top:5px;
+    font-size: 11px;
+    font-weight: 400;
+     color:rgb(136,136,136);
+}
+.top_MIN h3:after{
+content: '+';
+float: right;
+font-size: 14px;
+font-weight: normal;
+margin-top: -2px;
+margin-right: 8px;
+}
+.footer_small h4{
+    font-size: 12px;
+    color:rgb(136,136,136);
+}
+.small_three a{
+    font-size: 11px;
+    color:rgb(136,136,136);
+}
+
+.top_MIN .two_line2 a{
+    font-size: 12px;
+    color: #000;
+    font-weight: 200;
+    margin:5px 7px 0 0;
+    padding-right: 10px;
+    color:#000;
+    border-right: 1px solid rgb(136,136,136);
+
+}
+.top_MIN  .two_line2 a:last-child{
+    border-right: none;
+}
+.footer_small .CN{
+    font-size: 12px;
+    float: left;
+}
+
+/*底部结束*/
 /*>1024px时*/
 @media screen and (min-width:1024px) {
     main {
@@ -234,7 +381,7 @@ nav ul li .iconfont{
         font-size:40px;
         margin-top: 52px;
          }
-    .one h4{
+.one h4{
         width:420px ;
         height: 51px;
         line-height: 26px;
@@ -246,11 +393,54 @@ nav ul li .iconfont{
         width:50%;
         height: 580px;
         border-right:6px  solid #ffffff;
-        border-left:6px  solid #ffffff;
+        border-left:12px  solid #ffffff;
         border-bottom:12px  solid #ffffff;
         box-sizing: border-box;
         background:url(../img/shop_for_college_large.jpg) no-repeat center;
     }
+.section_2 ul li:nth-child(2n){
+        display: block;
+        border-right: 12px solid #ffffff;
+        border-left: 6px solid #ffffff;
+    }
+
+.border{
+        padding:40px 22px 12px;
+    }
+ .top_MAX{
+        /*width: 980px;*/
+        height:270px;
+    }
+ .top_MAX ul li {
+     width: 20%;
+     height: 223px;
+ }
+ .top_MAX ul li:nth-child(2) {
+        width: 20%;
+        height: 270px;
+    }
+  .top_MAX ul li:nth-child(3) {
+        width: 20%;
+        height: 146px;
+    }
+.top_MAX ul li:nth-child(4) {
+        width: 20%;
+        height: 215px;
+    }
+ .top_MAX ul li:nth-child(5) {
+        width: 20%;
+        height: 153px;
+    }
+.top_MAX h3{
+        font-size: 11px;
+        font-weight: 600;
+    }
+ .top_MAX ul li a{
+        font-size: 11px;
+    }
+ .top_MIN{
+     display: none;
+ }
 }
 /*<1024px时*/
 @media screen and (max-width:1024px) {
@@ -346,6 +536,48 @@ nav ul li .iconfont{
         box-sizing: border-box;
         background:url(../img/shop_for_college_large.jpg) no-repeat center;
   }
+.section_2 ul li:nth-child(2n){
+        display: block;
+        border-right: 12px solid #ffffff;
+        border-left: 6px solid #ffffff;
+    }
+    .border{
+        padding:20px 22px 12px;
+    }
+    .top_MAX{
+        /*width: 715px;*/
+        height:270px;
+    }
+    .top_MAX ul li {
+        width: 20%;
+        height: 200px;
+    }
+    .top_MAX ul li:nth-child(2) {
+        width: 20%;
+        height: 247px;
+    }
+    .top_MAX ul li:nth-child(3) {
+        width: 20%;
+        height: 146px;
+    }
+    .top_MAX ul li:nth-child(4) {
+        width: 20%;
+        height: 215px;
+    }
+    .top_MAX ul li:nth-child(5) {
+        width: 20%;
+        height: 130px;
+    }
+    .top_MAX h3{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .top_MAX ul li a{
+        font-size: 11px;
+    }
+    .top_MIN{
+        display: none;
+    }
 }
 /*<768px时*/
 @media screen and (max-width:768px) {
@@ -438,9 +670,19 @@ nav ul li .iconfont{
         border-bottom:12px  solid #ffffff;
         background:url(../img/shop_for_college_small.jpg) no-repeat center;
     }
-section ul li:nth-child(2n){
-     display: none;
-     border-right: none;
-     border-left: none;
- }
+    .section_2 ul li:nth-child(2n){
+        display: none;
+        border-right: none;
+        border-left: none;
+    }
+    .top_MIN{
+        display: block;
+    }
+    .top_MAX{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    
 }
