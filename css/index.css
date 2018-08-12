@@ -183,13 +183,12 @@ nav ul li .iconfont{
 }
 
 .footer{
-    width: 980px;
     height: 55px;
     padding-top:34px;
     padding-bottom: 21px;
     margin: 0 auto ;
 }
-.one_line{
+.footer .one_line{
     font-size:11px;
     font-weight: 400;
     color:rgb(136,136,136);
@@ -206,16 +205,9 @@ nav ul li .iconfont{
     height: 24px;
 }
 .two_line{
+    width:100% ;
     margin-top: 5px;
     color:rgb(136,136,136);
-}
-.two_line .CN{
-    font-size: 12px;
-    float: right;
-}
-.CN .icon-guoji{
-    vertical-align: -2px;
-    color: red;
 }
 
 .footer .two_line2 a{
@@ -249,6 +241,13 @@ nav ul li .iconfont{
     border-bottom:1px solid #5555;
     cursor: pointer;
 }
+.top_MIN .one_line{
+    font-size:11px;
+    font-weight: 400;
+    color:rgb(136,136,136);
+    padding-bottom: 8px;
+    margin-bottom: 7px;
+}
 
 .footer_small{
     width:100%;
@@ -259,7 +258,7 @@ nav ul li .iconfont{
     margin-top:5px;
     font-size: 11px;
     font-weight: 400;
-     color:rgb(136,136,136);
+    color:rgb(136,136,136);
 }
 .top_MIN h3:after{
 content: '+';
@@ -293,7 +292,7 @@ margin-right: 8px;
 }
 .footer_small .CN{
     font-size: 12px;
-    float: left;
+
 }
 
 /*底部结束*/
@@ -408,7 +407,7 @@ margin-right: 8px;
         padding:40px 22px 12px;
     }
  .top_MAX{
-        /*width: 980px;*/
+        width: 980px;
         height:270px;
     }
  .top_MAX ul li {
@@ -441,6 +440,14 @@ margin-right: 8px;
  .top_MIN{
      display: none;
  }
+    .two_line .CN{
+        font-size: 12px;
+        float: right;
+    }
+    .CN .icon-guoji{
+        vertical-align: -2px;
+        color: red;
+    }
 }
 /*<1024px时*/
 @media screen and (max-width:1024px) {
@@ -578,6 +585,14 @@ margin-right: 8px;
     .top_MIN{
         display: none;
     }
+    .two_line .CN{
+        font-size: 12px;
+        float: right;
+    }
+    .CN .icon-guoji{
+        vertical-align: -2px;
+        color: red;
+    }
 }
 /*<768px时*/
 @media screen and (max-width:768px) {
@@ -683,6 +698,14 @@ margin-right: 8px;
     }
     .footer{
         display: none;
+    }
+    .two_line .CN{
+        font-size: 12px;
+        float: right;
+    }
+    .CN .icon-guoji{
+        vertical-align: -2px;
+        color: red;
     }
     
 }
